@@ -23,7 +23,7 @@ const Servicios2 = () => {
             opacity: 1,
             scale: 1,
             transition: {
-                delayChildren: 0.5,
+                delayChildren: 0.01,
                 staggerChildren: 0.2
             }
         }
@@ -113,13 +113,13 @@ const Servicios2 = () => {
                     </p>
                 </div>
                 <h2 className="sm:p-10 max-w-lg font-sans text-5xl font-bold leading-none tracking-tight text-teal-500 sm:text-5xl md:mx-auto text-center">
-                    <span className="relative inline-block p-10 sm:p-0"></span>GUIA DE TRAMITES
+                    <span className="relative inline-block"></span>GUIA DE TRAMITES
                 </h2>
             </div>
-            <p className="text-base md:text-xl text-center bg-black text-white p-10 mb-5">
+            <p className="text-xl text-center bg-black text-white p-10 mb-5">
                 Aquí encontrarás respuestas a algunas preguntas frecuentes sobre diversos trámites en notarías y asesoría legal.
             </p>
-            <div className="max-w-screen-lg sm:mx-auto">
+            <div id='preguntas' className="max-w-screen-lg sm:mx-auto">
                 <ul className="space-y-8">
                     <motion.div
                         variants={container}
@@ -129,8 +129,7 @@ const Servicios2 = () => {
                         {preguntasRespuestas.map((preguntaRespuesta) => (
                             <motion.li
                                 key={preguntaRespuesta.id}
-                                variants={item}
-                            
+                                variants={item} 
                             >
                                 <div className="space-y-3 pb-3">
                                     <div className="flex items-center justify-between rounded-xl p-2">
