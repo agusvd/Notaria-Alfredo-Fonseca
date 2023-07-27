@@ -139,7 +139,7 @@ const Servicios2 = () => {
                                         </button>
                                     </div>
                                     {respuestasVisibles[preguntaRespuesta.id] && (
-                                        <pre className="text-teal-600 border-2 rounded-xl border-teal-300 p-2 text-justify whitespace-pre-wrap text-xl">{preguntaRespuesta.respuesta}</pre>
+                                        <pre className="text-black font-primary border-2 rounded-xl border-teal-300 p-2 text-justify whitespace-pre-wrap text-xl">{preguntaRespuesta.respuesta}</pre>
                                     )}
                                 </div>
                             </motion.li>

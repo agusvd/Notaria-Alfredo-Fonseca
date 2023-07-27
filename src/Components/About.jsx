@@ -37,15 +37,16 @@ const About = () => {
       <div className="mx-auto px-4 py-8">
         <motion.h2 className="text-3xl font-bold text-teal-500 mb-4 lg:pl-24 lg:pr-24" initial="hidden" animate="visible" variants={containerVariants}>Nosotros</motion.h2>
         <motion.div className="mb-8 lg:pl-24 lg:pr-24" initial="hidden" animate="visible" variants={containerVariants}>
-          <p className="text-lg">
-            La Notaría Alfredo Fonseca ha sido parte de la comunidad desde hace más de 3 años.
-          </p>
-          <p className="text-lg mt-4">
-            Durante todos estos años, hemos sido testigos de numerosos momentos importantes en la vida de las personas. Desde la firma de contratos de compraventa de propiedades hasta la redacción de testamentos, nuestra notaría ha estado presente en cada paso del camino.
-          </p>
-          <p className="text-lg mt-4">
-            Nos enorgullece decir que nuestro equipo de profesionales altamente capacitados se ha ganado la confianza de la comunidad gracias a su experiencia y profesionalismo. Nuestro compromiso con la atención personalizada, la honestidad y la transparencia nos distingue como una notaría confiable y de calidad.
-          </p>
+          <div className='text-justify'>
+            <p className="text-lg">
+              La Notaría Alfredo Fonseca ha sido parte de la comunidad desde hace más de 3 años.
+            </p>
+            <p className="text-lg mt-4">
+              Durante todos estos años, hemos sido testigos de numerosos momentos importantes en la vida de las personas. Desde la firma de contratos de compraventa de propiedades hasta la redacción de testamentos, nuestra notaría ha estado presente en cada paso del camino.
+            </p>
+            <p className="text-lg mt-4">
+              Nos enorgullece decir que nuestro equipo de profesionales altamente capacitados se ha ganado la confianza de la comunidad gracias a su experiencia y profesionalismo. Nuestro compromiso con la atención personalizada, la honestidad y la transparencia nos distingue como una notaría confiable y de calidad.
+            </p></div>
         </motion.div>
 
         <motion.div className="mb-8 lg:mb-16 lg:pl-24 lg:pr-24" initial="hidden" animate="visible" variants={containerVariants}>
@@ -69,21 +70,21 @@ const About = () => {
             </li>
           </ul>
           <h3 className="text-2xl font-bold mb-2 mt-2 text-teal-500">Información</h3>
-            <p className="text-lg mb-2">
-              Si tienes alguna pregunta o necesitas nuestros servicios, no dudes en contactarnos.
-            </p>
-            <div className="flex items-center">
-              <FaPhoneAlt className="text-teal-500 mr-2" />
-              <span className="text-lg">+56 9 9649 0830</span>
-            </div>
-            <div className="flex items-center">
-              <FaPhoneAlt className="text-teal-500 mr-2" />
-              <span className="text-lg">+61 2 223230</span>
-            </div>
-            <div className="flex items-center">
-              <IoLocationSharp className="text-teal-500 mr-2" />
-              <p className="text-lg">21 de Mayo 1123, 6201066 Punta Arenas</p>
-            </div>
+          <p className="text-lg mb-2">
+            Si tienes alguna pregunta o necesitas nuestros servicios, no dudes en contactarnos.
+          </p>
+          <div className="flex items-center">
+            <FaPhoneAlt className="text-teal-500 mr-2" />
+            <span className="text-lg">+56 9 9649 0830</span>
+          </div>
+          <div className="flex items-center">
+            <FaPhoneAlt className="text-teal-500 mr-2" />
+            <span className="text-lg">+61 2 223230</span>
+          </div>
+          <div className="flex items-center">
+            <IoLocationSharp className="text-teal-500 mr-2" />
+            <p className="text-lg">21 de Mayo 1123, 6201066 Punta Arenas</p>
+          </div>
         </motion.div>
 
         <motion.div className="mb-8 lg:mb-16" initial="hidden" animate="visible" variants={teamVariants}>
