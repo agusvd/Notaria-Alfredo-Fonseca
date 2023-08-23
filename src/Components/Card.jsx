@@ -38,7 +38,7 @@ const Card = () => {
             <motion.div variants={container} initial="hidden" whileInView="visible" className='mt-10 grid grid-cols-1 md:grid-cols-3 md:gap-y-20 md:gap-x-8 gap-y-20 p-10'>
 
                 {/* cartas */}
-                <div className='overflow-hidden rounded-xl hover:shadow-xl bg-white hover:scale-105 shadow-md'>
+                <div className='overflow-hidden rounded-xl bg-white hover:shadow-2xl hover:shadow-teal-500'>
                     <div className='flex items-center justify-center h-[240px] w-full overflow-hidden'>
                         <img src="https://i0.wp.com/blog.lemontech.com/wp-content/uploads/2022/06/archivo-digital.jpg?fit=1024%2C683&ssl=1" className=" md:h-full md:w-auto" />
                     </div>
@@ -59,7 +59,7 @@ const Card = () => {
                     </div>
                 </div>
 
-                <div className='overflow-hidden rounded-xl hover:shadow-xl bg-white hover:scale-105 shadow-md'>
+                <div className='overflow-hidden rounded-xl bg-white hover:shadow-2xl hover:shadow-teal-500'>
                     <div className='flex items-center justify-center h-[240px] w-full overflow-hidden'>
                         <img src="https://media.ambito.com/p/b79eaecc59ff201461f7d30b6ee9cb88/adjuntos/239/imagenes/039/503/0039503313/firma-digitaljpg.jpg" className="h-full w-auto" />
                     </div>
@@ -80,7 +80,7 @@ const Card = () => {
                     </div>
                 </div>
 
-                <div className='overflow-hidden rounded-xl hover:shadow-xl bg-white hover:scale-105 shadow-md'>
+                <div className='overflow-hidden rounded-xl bg-white hover:shadow-2xl hover:shadow-teal-500'>
                     <div className='flex items-center justify-center h-[240px] w-full overflow-hidden'>
                         <img src="https://global-uploads.webflow.com/61388d0210d654c3910bea20/620fb6d688913b53195259f1_guia-practica-para-tramitar-una-herencia-notaria-jbl.jpg" className='md:h-full md:w-auto'/>
                     </div>

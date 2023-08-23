@@ -2,8 +2,9 @@ import React, { useState } from 'react';
 import { FaInstagram, FaLinkedin, FaFacebookSquare, FaTwitter } from 'react-icons/fa';
 import { CgMenu, CgClose } from 'react-icons/cg';
 import { FaChessKing } from 'react-icons/fa'
-import '../index.css';
+import '../../index.css';
 import { Link, useLocation } from 'react-router-dom';
+import NavbarMobile from './NavbarMobile';
 
 const Navbar = () => {
     const [menuOpen, setMenuOpen] = useState(false);
@@ -27,6 +28,9 @@ const Navbar = () => {
                     (<a href='#preguntas' className='hover:no-underline underline-animation cursor-pointer text-white'>
                         Preguntas
                     </a>)}
+                <Link to="/Notaria-express" className={`hover:no-underline underline-animation cursor-pointer ${location.pathname === '/Notaria-express' ? 'text-teal-500' : 'text-white'
+                    }`}>Notaria Express
+                </Link>
                 <Link to="/Contacto" className={`hover:no-underline underline-animation cursor-pointer ${location.pathname === '/Contacto' ? 'text-teal-500' : 'text-white'
                     }`}>Contacto</Link>
                 <Link to="/Nosotros" className={`hover:no-underline underline-animation cursor-pointer ${location.pathname === '/Nosotros' ? 'text-teal-500' : 'text-white'
@@ -46,36 +50,7 @@ const Navbar = () => {
                     <FaLinkedin />
                 </a>
             </div>
-            <div className="block sm:hidden bg-black">
-                <div className="flex flex-col text-xl space-y-2">
-                    <div className="flex items-center justify-start">
-                        <a onClick={toggleMenu} className="text-white hover:text-teal-500 text-3xl">
-                            {menuOpen ? <CgClose /> : <CgMenu />}
-                        </a>
-                    </div>
-                    {menuOpen && (
-                        <div className='bg-black flex justify-center items-center flex-col w-full text-3xl gap-2'>
-                            <Link to="/" className={`hover:no-underline underline-animation cursor-pointer ${location.pathname === '/' ? 'text-teal-500' : 'text-white'}`}>
-                                Inicio
-                            </Link>
-                            {location.pathname === '/' && (
-                                <a href="#servicios" className="hover:no-underline underline-animation cursor-pointer text-white">
-                                    Servicios
-                                </a>)}
-                            {location.pathname === '/' && (
-                                <a href="#preguntas" className="hover:no-underline underline-animation cursor-pointer text-white">
-                                    Preguntas
-                                </a>)}
-                            <Link to="/Contacto" className={`hover:no-underline underline-animation cursor-pointer ${location.pathname === '/Contacto' ? 'text-teal-500' : 'text-white'}`}>
-                                Contacto
-                            </Link>
-                            <Link to="/Nosotros" className={`hover:no-underline underline-animation cursor-pointer ${location.pathname === '/Nosotros' ? 'text-teal-500' : 'text-white'}`}>
-                                Nosotros
-                            </Link>
-                        </div>
-                    )}
-                </div>
-            </div>
+            <NavbarMobile/>
         </div>
     );
 };

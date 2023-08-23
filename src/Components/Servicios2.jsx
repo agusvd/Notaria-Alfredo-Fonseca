@@ -107,17 +107,12 @@ const Servicios2 = () => {
         <div className='font-primary'>
         <div className="py-16 mx-auto sm:max-w-xl md:max-w-full lg:py-12 bg-white/50 lg:w-full">
             <div className="md:mx-auto sm:text-center lg:w-screen rounded-lg lg:pb-14 container pb-16">
-                <div className='text-center'>
-                    <p className="inline-block px-3 mb-4 text-xl font-bold tracking-wider text-black  rounded-full">
-                        Alfredo Fonseca Mihovilovic
-                    </p>
-                </div>
                 <h2 className="sm:p-10 max-w-lg font-sans text-5xl font-bold leading-none tracking-tight text-teal-500 sm:text-5xl md:mx-auto text-center">
                     <span className="relative inline-block"></span>GUIA DE TRAMITES
                 </h2>
             </div>
             <p className="text-xl text-center bg-black text-white p-10 mb-5">
-                Aquí encontrarás respuestas a algunas preguntas frecuentes sobre diversos trámites en notarías y asesoría legal.
+                Aquí encontrarás respuestas a algunas preguntas frecuentes sobre diversos trámites de notarías y asesoría legal.
             </p>
             <div id='preguntas' className="max-w-screen-lg sm:mx-auto">
                 <ul className="space-y-8">
