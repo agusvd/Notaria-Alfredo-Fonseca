@@ -32,13 +32,13 @@ const Main = () => {
     
     return (
         <section className="bg-black text-gray-200 font-primary">
-            <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+            <div className="container mx-auto flex px-5 py-5 sm:py-12 md:flex-row flex-col items-center">
                 <motion.div variants={container} initial="hidden" whileInView="visible" className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
-                    <motion.h1 className="title-font sm:text-5xl text-3xl mb-4 font-medium text-teal-500" variants={item} initial="hidden" whileInView="visible">
+                    <motion.h1 className="title-font text-5xl mb-4 font-medium text-teal-500" variants={item} initial="hidden" whileInView="visible">
                         NOTARIA
                         <br className="hidden lg:inline-block" />
                     </motion.h1>
-                    <motion.h2 className="sm:text-4xl text-2xl mb-4" variants={item}>
+                    <motion.h2 className="text-4xl mb-4" variants={item}>
                         Alfredo Fonseca Mihovilovic
                     </motion.h2>
                     <motion.p className="mb-8 leading-relaxed text-xl" variants={item}>

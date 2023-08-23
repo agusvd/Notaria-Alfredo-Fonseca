@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import { FaChevronLeft, FaChevronDown } from 'react-icons/fa';
 import '../index.css';
 
-const Servicios2 = () => {
+const Preguntas = () => {
     const [respuestasVisibles, setRespuestasVisibles] = useState([]);
 
     const handleMostrarRespuesta = (id) => {
@@ -105,7 +105,7 @@ const Servicios2 = () => {
 
     return (
         <div className='font-primary'>
-            <div className="py-16 mx-auto sm:max-w-xl md:max-w-full lg:py-12 bg-white/50 lg:w-full">
+            <div className="py-16 mx-auto sm:max-w-xl md:max-w-full lg:py-12 bg-white lg:w-full">
                 <div className="md:mx-auto sm:text-center lg:w-screen rounded-lg lg:pb-14 container pb-16">
                     <h2 className="sm:p-10 max-w-lg font-sans text-5xl font-bold leading-none tracking-tight text-teal-500 sm:text-5xl md:mx-auto text-center">
                         <span className="relative inline-block"></span>GUIA DE TRAMITES
@@ -140,4 +140,4 @@ const Servicios2 = () => {
     );
 };
 
-export default Servicios2;
+export default Preguntas;
