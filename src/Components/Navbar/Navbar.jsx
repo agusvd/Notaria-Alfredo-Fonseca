@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { FaInstagram, FaLinkedin, FaFacebookSquare, FaTwitter } from 'react-icons/fa';
-import { CgMenu, CgClose } from 'react-icons/cg';
 import { FaChessKing } from 'react-icons/fa'
 import '../../index.css';
 import { Link, useLocation } from 'react-router-dom';
@@ -15,7 +14,7 @@ const Navbar = () => {
     };
 
     return (
-        <div className="bg-black text-white sm:flex sm:justify-around p-5 font-primary">
+        <div className="bg-black text-white sm:flex sm:justify-around sm:p-5 font-primary">
             <div className="hidden text-center text-xl space-x-2 sm:flex sm:space-x-3 sm:items-center">
                 <FaChessKing className="text-xl text-white" />
                 <Link to="/" className={`hover:no-underline underline-animation cursor-pointer ${location.pathname === '/' ? 'text-teal-500' : 'text-white'

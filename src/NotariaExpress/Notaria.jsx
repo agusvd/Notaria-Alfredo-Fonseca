@@ -3,6 +3,8 @@ import axios from 'axios'
 import Modal from './Modal';
 import ModalCategoria from './ModalCategoria';
 import ModalBuscar from './ModalBuscar';
+import { BiSearchAlt } from 'react-icons/bi'
+import './Notaria.css';
 
 const Notaria = () => {
     {/* Input para buscar */ }
@@ -61,86 +63,90 @@ const Notaria = () => {
     };
 
     return (
-        <div className='pt-10 pb-10 h-screen w-full flex flex-col justify-center font-primary'>
+        <div className='pt-10 pb-10 h-screen w-full font-primary animated-background font-bold items-center justify-center'>
             {/* Header */}
             <div className='flex flex-col items-center justify-center text-center'>
                 <img src="https://www.notarioexpress.cl/images/finiquitos-page/logo/logo-icon.png"
                     alt="logo notarioexpress" width="50px" height="auto" />
                 <h1 className='text-4xl pt-5'>¿Qué documento buscas?</h1>
                 <h4 className='text-2xl pb-5'>Obtén tu documento rápido, fácil y en línea</h4>
-                <button className="p-2 w-auto text-xl font-bold rounded-2xl border-2"
-                    onClick={() => setIsSearchModalOpen(true)}>
-                    Busca aquí tu documento
-                </button>
+                <div className='flex items-center rounded-2xl border-2 bg-white hover:bg-black hover:text-white duration-300 transition-all ease-in-out m-4 sm:m-0'>
+                    <BiSearchAlt size={30} className='' />
+                    <button className="p-2 w-auto text-xl font-bold"
+                        onClick={() => setIsSearchModalOpen(true)}>
+                        Apreta aquí y busque su documento
+                    </button>
+                </div>
             </div>
             {/* Buscador */}
-            <div>
+            <div className='pb-10'>
                 <div className='text-center p-2'>
-                    {/* Use the new ModalBuscar component */}
                     <ModalBuscar
                         isOpen={isSearchModalOpen}
                         onClose={() => setIsSearchModalOpen(false)}
                         filterInput={filterInput}
                         setFilterInput={setFilterInput}
                         filteredDocuments={filteredDocuments}
-                        setSelectedDocument={setSelectedDocument}
-                    />
+                        setSelectedDocument={setSelectedDocument} />
                 </div>
                 {/* Modal */}
                 {selectedDocument && (
-                    <Modal
-                        document={selectedDocument}
-                        onClose={() => setSelectedDocument(null)}
-                    />
+                    <Modal document={selectedDocument} onClose={() => setSelectedDocument(null)} />
                 )}
             </div>
             {/* Categorias de los documentos */}
-            <div className='flex justify-center items-center p-2'>
-                <div className='grid grid-cols-2 gap-10'>
-                    {/* Autorizaciones */}
-                    <div className='flex flex-col items-center gap-2 cursor-pointer' onClick={() => setSelectedCategory('Autorizaciones')}>
-                        <img src="https://www.notarioexpress.cl/images/docs-pages/icons/acordeon-documentos/autorizaciones.png"
-                            width="auto" height="38rem" alt="category" />
-                        <p className="name-category">Autorizaciones</p>
+            <div className='flex justify-center items-center'>
+                <div className='flex flex-col justify-center items-center p-2 text-xl border-2 bg-white rounded-xl'>
+                    <div className='pb-5 text-center'>
+                        <h1 className='text-3xl'>Categorias</h1>
+                        <p className='text-gray-400 text-sm'>Apreta en una categoria y busque su documento</p>
                     </div>
-                    {/* Declaraciones */}
-                    <div className='flex flex-col items-center gap-2 cursor-pointer' onClick={() => setSelectedCategory('Declaraciones')}>
-                        <img src="https://www.notarioexpress.cl/images/docs-pages/icons/acordeon-documentos/Declaracionesa.png"
-                            width="auto" height="38rem" alt="category" />
-                        <p className="name-category">Declaraciones</p>
+                    <div className='grid grid-cols-2 gap-10'>
+                        {/* Autorizaciones */}
+                        <div className='flex flex-col items-center gap-2 cursor-pointer duration-200 transition-all ease-in hover:scale-110 hover:text-teal-500' onClick={() => setSelectedCategory('Autorizaciones')}>
+                            <img src="https://www.notarioexpress.cl/images/docs-pages/icons/acordeon-documentos/autorizaciones.png"
+                                width="auto" height="38rem" alt="category" />
+                            <p className="name-category">Autorizaciones</p>
+                        </div>
+                        {/* Declaraciones */}
+                        <div className='flex flex-col items-center gap-2 cursor-pointer duration-200 transition-all ease-in hover:scale-110 hover:text-teal-500' onClick={() => setSelectedCategory('Declaraciones')}>
+                            <img src="https://www.notarioexpress.cl/images/docs-pages/icons/acordeon-documentos/Declaracionesa.png"
+                                width="auto" height="38rem" alt="category" />
+                            <p className="name-category">Declaraciones</p>
+                        </div>
+                        {/* Certificaciones */}
+                        <div className='flex flex-col items-center gap-2 cursor-pointer duration-200 transition-all ease-in hover:scale-110 hover:text-teal-500' onClick={() => setSelectedCategory('Certificados')}>
+                            <img src="https://www.notarioexpress.cl/images/docs-pages/icons/acordeon-documentos/Certificados.png"
+                                width="auto" height="38rem" alt="category" />
+                            <p className="name-category">Certificaciones</p>
+                        </div>
+                        {/* Poderes */}
+                        <div className='flex flex-col items-center gap-2 cursor-pointer duration-200 transition-all ease-in hover:scale-110 hover:text-teal-500' onClick={() => setSelectedCategory('Poderes')}>
+                            <img src="https://www.notarioexpress.cl/images/docs-pages/icons/acordeon-documentos/Poderes.svg"
+                                width="auto" height="38rem" alt="category" />
+                            <p className="name-category">Poderes</p>
+                        </div>
+                        {/* Contratos */}
+                        <div className='flex flex-col items-center gap-2 cursor-pointer duration-200 transition-all ease-in hover:scale-110 hover:text-teal-500' onClick={() => setSelectedCategory('Contratos')}>
+                            <img src="https://www.notarioexpress.cl/images/docs-pages/icons/acordeon-documentos/Contratosa.png"
+                                width="auto" height="38rem" alt="category" />
+                            <p className="name-category">Contratos</p>
+                        </div>
+                        {/* Otros */}
+                        <div className='flex flex-col items-center gap-2 cursor-pointer duration-200 transition-all ease-in hover:scale-110 hover:text-teal-500' onClick={() => setSelectedCategory('Otros')}>
+                            <img src="https://www.notarioexpress.cl/images/docs-pages/icons/acordeon-documentos/Otrosa.png"
+                                width="auto" height="38rem" alt="category" />
+                            <p className="name-category">Otros</p>
+                        </div>
                     </div>
-                    {/* Certificaciones */}
-                    <div className='flex flex-col items-center gap-2 cursor-pointer' onClick={() => setSelectedCategory('Certificados')}>
-                        <img src="https://www.notarioexpress.cl/images/docs-pages/icons/acordeon-documentos/Certificados.png"
-                            width="auto" height="38rem" alt="category" />
-                        <p className="name-category">Certificaciones</p>
-                    </div>
-                    {/* Poderes */}
-                    <div className='flex flex-col items-center gap-2 cursor-pointer' onClick={() => setSelectedCategory('Poderes')}>
-                        <img src="https://www.notarioexpress.cl/images/docs-pages/icons/acordeon-documentos/Poderes.svg"
-                            width="auto" height="38rem" alt="category" />
-                        <p className="name-category">Poderes</p>
-                    </div>
-                    {/* Contratos */}
-                    <div className='flex flex-col items-center gap-2 cursor-pointer' onClick={() => setSelectedCategory('Contratos')}>
-                        <img src="https://www.notarioexpress.cl/images/docs-pages/icons/acordeon-documentos/Contratosa.png"
-                            width="auto" height="38rem" alt="category" />
-                        <p className="name-category">Contratos</p>
-                    </div>
-                    {/* Otros */}
-                    <div className='flex flex-col items-center gap-2 cursor-pointer' onClick={() => setSelectedCategory('Otros')}>
-                        <img src="https://www.notarioexpress.cl/images/docs-pages/icons/acordeon-documentos/Otrosa.png"
-                            width="auto" height="38rem" alt="category" />
-                        <p className="name-category">Otros</p>
-                    </div>
+                    {selectedCategory && (
+                        <ModalCategoria
+                            documents={getDocumentsByCategory(selectedCategory)}
+                            selectedCategory={selectedCategory}
+                            onClose={() => setSelectedCategory(null)}
+                            onDocumentClick={(document) => setSelectedDocument(document)} />
+                    )}
                 </div>
-                {selectedCategory && (
-                    <ModalCategoria
-                        documents={getDocumentsByCategory(selectedCategory)}
-                        selectedCategory={selectedCategory}
-                        onClose={() => setSelectedCategory(null)}
-                        onDocumentClick={(document) => setSelectedDocument(document)} />
-                )}
             </div>
         </div>
     )

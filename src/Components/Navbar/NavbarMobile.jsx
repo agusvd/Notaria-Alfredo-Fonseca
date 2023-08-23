@@ -16,9 +16,9 @@ const NavbarMobile = () => {
 
     return (
         <div className="block sm:hidden bg-black">
-            <div className="flex flex-col text-xl space-y-2">
+            <div className="flex flex-col text-xl space-y-2 ">
                 <div className="flex items-center justify-center">
-                    <a onClick={toggleMenu} className="text-white hover:text-teal-500 text-3xl flex items-center justify-center">
+                <a onClick={toggleMenu} className="text-white hover:text-teal-500 text-3xl flex items-center justify-center fixed bottom-0 left-0 right-0 bg-black p-4 z-[99]">
                         {menuOpen ? <CgClose /> : <CgMenu />} <a className='text-xl'>Menu</a>
                     </a>
                 </div>

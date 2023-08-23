@@ -123,7 +123,7 @@ const About = () => {
               </div>
               <div className="flex items-center mb-2">
                 <MdMail size={30} className="text-teal-500 mr-2" />
-                <p className="text-lg">jaov.alfredofonseca@notraiointerino.com</p>
+                <p className="text-lg">jaov.alfredofonseca@notariointerino.com</p>
               </div>
             </motion.div>
             <motion.div className="bg-white border border-gray-200 rounded-lg shadow p-4 hover:bg-black hover:text-white duration-300 transition-all ease-out" whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>

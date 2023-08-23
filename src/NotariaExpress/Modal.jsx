@@ -30,7 +30,7 @@ const Modal = ({ document, onClose }) => {
                     <div className='text-gray-800' dangerouslySetInnerHTML={{ __html: processedRequisitos }} />
                 </div>
                 <div className='flex justify-center text-center items-center'>
-                    <a className='flex bg-blue-500 text-white p-2 rounded-xl hover:bg-teal-500' href={document.UrlNotarioExpress} target="_blank" rel="noopener noreferrer">Pídelo ahora</a>
+                    <a className='flex bg-blue-500 text-white p-2 rounded-xl hover:bg-teal-500 duration-300 transition-all ease-out' href={document.UrlNotarioExpress} target="_blank" rel="noopener noreferrer">Pídelo ahora</a>
                 </div>
             </div>
         </div>
