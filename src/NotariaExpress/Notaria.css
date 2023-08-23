@@ -2,7 +2,7 @@
 .animated-background {
     background: linear-gradient(-45deg, teal, #759191, rgb(4, 209, 209), #1a4d4e);
     background-size: 400% 400%;
-    animation: gradientAnimation 15s ease infinite;
+    animation: gradientAnimation 5s ease infinite;
 }
 
 @keyframes gradientAnimation {
