@@ -63,7 +63,7 @@ const Notaria = () => {
     };
 
     return (
-        <div className='pt-10 pb-10 h-screen w-full font-primary animated-background font-bold items-center justify-center'>
+        <div className='pt-10 pb-20 h-full w-full font-primary animated-background font-bold items-center justify-center'>
             {/* Header */}
             <div className='flex flex-col items-center justify-center text-center'>
                 <img src="https://www.notarioexpress.cl/images/finiquitos-page/logo/logo-icon.png"
@@ -96,7 +96,7 @@ const Notaria = () => {
             </div>
             {/* Categorias de los documentos */}
             <div className='flex justify-center items-center font-primary'>
-                <div className='flex flex-col justify-center items-center p-2 text-xl border-2 bg-white rounded-xl'>
+                <div className='flex flex-col justify-center items-center p-2 text-xl border-2 bg-white rounded-xl mb-20'>
                     <div className='pb-5 text-center'>
                         <h1 className='text-3xl'>Categorias</h1>
                         <p className='text-gray-400 text-sm'>Apreta en una categoria y busque su documento</p>
