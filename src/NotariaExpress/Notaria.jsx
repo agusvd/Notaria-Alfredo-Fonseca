@@ -95,7 +95,7 @@ const Notaria = () => {
                 )}
             </div>
             {/* Categorias de los documentos */}
-            <div className='flex justify-center items-center'>
+            <div className='flex justify-center items-center font-primary'>
                 <div className='flex flex-col justify-center items-center p-2 text-xl border-2 bg-white rounded-xl'>
                     <div className='pb-5 text-center'>
                         <h1 className='text-3xl'>Categorias</h1>

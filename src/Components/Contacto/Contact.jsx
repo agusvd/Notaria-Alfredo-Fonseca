@@ -26,7 +26,7 @@ const Contact = () => {
         visible: { opacity: 1, y: 0 },
     };
     return (
-        <motion.div className='bg-cover bg-center min-h-screen flex items-center justify-center' style={{ backgroundImage: `url(${fondo})` }}>
+        <motion.div className='bg-cover bg-center min-h-screen flex items-center justify-center font-primary' style={{ backgroundImage: `url(${fondo})` }}>
             <motion.div className='bg-white bg-opacity-90 sm:rounded-xl p-2 sm:p-6 w-full md:w-3/4 lg:w-2/3 xl:w-1/2 sm:m-10'
                 initial="hidden"
                 animate="visible"

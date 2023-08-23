@@ -20,16 +20,16 @@ const Modal = ({ document, onClose }) => {
     return (
         <div className='fixed inset-0 bg-black bg-opacity-25 backdrop-blur-sm flex justify-center items-center font-primary'>
             <div className='w-[700px] flex flex-col text-black bg-white p-2 text-start gap-2 rounded-lg max-h-[700px] overflow-y-auto'>
-                <div className='flex justify-center items-center'>
+                <div className='flex justify-center items-center font-primary'>
                     <h2 className='text-xl text-center font-bold'>{document.Nombre}</h2>
                     <button onClick={onClose} className=' w-min p-2 rounded-xl text-black hover:text-red-500'><IoClose size={30}/></button>
                 </div>
-                <div className='flex flex-col text-start items-center'>
+                <div className='flex flex-col text-start items-center font-primary'>
                     <p className='text-gray-700'>{document.Descripcion}</p>
                     <h2 className='text-center text-lg font-bold'>Requerimientos</h2>
                     <div className='text-gray-800' dangerouslySetInnerHTML={{ __html: processedRequisitos }} />
                 </div>
-                <div className='flex justify-center text-center items-center'>
+                <div className='flex justify-center text-center items-center font-primary'>
                     <a className='flex bg-blue-500 text-white p-2 rounded-xl hover:bg-teal-500 duration-300 transition-all ease-out' href={document.UrlNotarioExpress} target="_blank" rel="noopener noreferrer">Pídelo ahora</a>
                 </div>
             </div>

@@ -7,7 +7,7 @@ const ModalBuscar = ({ isOpen, onClose, filterInput, setFilterInput, filteredDoc
 
     
     return (
-        <div className={`bg-black bg-opacity-25 backdrop-blur-sm fixed inset-0 flex items-center justify-center transition-opacity ${isOpen ? 'opacity-100' : 'opacity-0 pointer-events-none'}`}>
+        <div className={`bg-black bg-opacity-25 backdrop-blur-sm fixed inset-0 flex items-center justify-center font-primary transition-opacity ${isOpen ? 'opacity-100' : 'opacity-0 pointer-events-none'}`}>
             <div className="w-full sm:w-2/3 mx-auto p-4 rounded-md ">
                 <div className='flex justify-center items-center'>
                     <div className={`flex items-center w-full rounded-t-xl bg-white bg-opacity-80 border-2 ${hasFilterInput ? '' : 'rounded-b-xl border-b-2'}`}>
