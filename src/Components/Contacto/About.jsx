@@ -84,7 +84,9 @@ const About = () => {
         </motion.div>
 
         <motion.div className="mb-8 lg:mb-16" initial="hidden" animate="visible" variants={teamVariants}>
-          <h3 className="text-5xl font-bold text-center pb-10 text-teal-500">Contactanos</h3>
+          <h3 className="text-5xl font-bold text-center pb-2 text-teal-500">Contacto</h3>
+          <h4 className='text-3xl font-bold text-center pb-10 text-gray-500'>(Escrituras Publicas)</h4>
+
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:pl-24 lg:pr-24">
             <motion.div className="bg-white border border-gray-200 rounded-lg shadow p-4 hover:bg-black hover:text-white duration-300 transition-all ease-out" whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
               <div className="flex flex-col items-center mb-4 text-3xl gap-4">
