@@ -82,6 +82,25 @@ const About = () => {
             <p className="text-lg">21 de Mayo 1123, 6201066 Punta Arenas, Region de Magallanes y Antartica Chilena</p>
           </div>
         </motion.div>
+        <motion.div className="mb-8 lg:mb-16" initial="hidden" animate="visible" variants={teamVariants}>
+          <h3 className="text-5xl font-bold text-center pb-2 text-teal-500">Contactos</h3>
+          <h4 className='text-3xl font-bold text-center pb-10 text-gray-500'>(Docuemntos privados)</h4>
+
+          <div className="flex items-center justify-center lg:pl-24 lg:pr-24">
+            <motion.div className="bg-white border border-gray-200 rounded-lg shadow p-4 hover:bg-black hover:text-white duration-300 transition-all ease-out" whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+              <div className="flex flex-col items-center mb-4 text-3xl gap-4">
+                <div className='text-center'>
+                  <h4 className="text-xl font-bold">Atencion de meson</h4>
+                </div>
+              </div>
+              <div className="flex items-center mb-2">
+                <MdMail size={30} className="text-teal-500 mr-2" />
+                <p className="text-lg">docprivados.alfredofonseca@notariointerino.com</p>
+              </div>
+            </motion.div>
+            
+          </div>
+        </motion.div>
 
         <motion.div className="mb-8 lg:mb-16" initial="hidden" animate="visible" variants={teamVariants}>
           <h3 className="text-5xl font-bold text-center pb-2 text-teal-500">Contacto</h3>
