@@ -134,6 +134,18 @@ const About = () => {
                 <p className="text-lg">varf.alfredofonseca@notariointerino.com</p>
               </div>
             </motion.div>
+            <motion.div className="bg-white border border-gray-200 rounded-lg shadow p-4 hover:bg-black hover:text-white duration-300 transition-all ease-out" whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+              <div className="flex flex-col items-center mb-4 text-3xl gap-4">
+                <div className='text-center'>
+                  <h4 className="text-xl font-bold">Jimena Ojeda Ampuero</h4>
+                  <p className="text-lg text-teal-500">Escrituras Publicas</p>
+                </div>
+              </div>
+              <div className="flex items-center mb-2">
+                <MdMail size={30} className="text-teal-500 mr-2" />
+                <p className="text-lg">jaoa.alfredofonseca@notariointerino.com</p>
+              </div>
+            </motion.div>
           </div>
         </motion.div>
       </div>
