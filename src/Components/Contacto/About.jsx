@@ -107,16 +107,28 @@ const About = () => {
           <h4 className='text-3xl font-bold text-center pb-10 text-gray-500'>(Escrituras Publicas)</h4>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:pl-24 lg:pr-24">
-            <motion.div className="bg-white border border-gray-200 rounded-lg shadow p-4 hover:bg-black hover:text-white duration-300 transition-all ease-out" whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+            <motion.div className="bg-white border border-gray-200 rounded-lg shadow p-4 hover:bg-black hover:text-white duration-300 transition-all ease-out col-span-2" whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
               <div className="flex flex-col items-center mb-4 text-3xl gap-4">
                 <div className='text-center'>
                   <h4 className="text-xl font-bold">Alfredo Fonseca Mihovilovic</h4>
-                  <p className="text-lg text-teal-500">Notario</p>
+                  <p className="text-lg text-teal-500">Notario <a className='text-xl'>(I)</a></p>
+                </div>
+              </div>
+              <div className="flex items-center justify-center mb-2">
+                <MdMail size={30} className="text-teal-500 mr-2" />
+                <p className="text-lg">alfredofonseca@notariointerino.com</p>
+              </div>
+            </motion.div>
+            <motion.div className="bg-white border border-gray-200 rounded-lg shadow p-4 hover:bg-black hover:text-white duration-300 transition-all ease-out" whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+              <div className="flex flex-col items-center mb-4 text-3xl gap-4">
+                <div className='text-center'>
+                  <h4 className="text-xl font-bold">Jimena Ojeda Ampuero</h4>
+                  <p className="text-lg text-teal-500">Escrituras Publicas</p>
                 </div>
               </div>
               <div className="flex items-center mb-2">
                 <MdMail size={30} className="text-teal-500 mr-2" />
-                <p className="text-lg">alfredofonseca@notariointerino.com</p>
+                <p className="text-lg">jaoa.alfredofonseca@notariointerino.com</p>
               </div>
             </motion.div>
             <motion.div className="bg-white border border-gray-200 rounded-lg shadow p-4 hover:bg-black hover:text-white duration-300 transition-all ease-out" whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
@@ -134,18 +146,6 @@ const About = () => {
             <motion.div className="bg-white border border-gray-200 rounded-lg shadow p-4 hover:bg-black hover:text-white duration-300 transition-all ease-out" whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
               <div className="flex flex-col items-center mb-4 text-3xl gap-4">
                 <div className='text-center'>
-                  <h4 className="text-xl font-bold">Jorge Oliver Villegas</h4>
-                  <p className="text-lg text-teal-500">Escrituras Publicas</p>
-                </div>
-              </div>
-              <div className="flex items-center mb-2">
-                <MdMail size={30} className="text-teal-500 mr-2" />
-                <p className="text-lg">jaov.alfredofonseca@notariointerino.com</p>
-              </div>
-            </motion.div>
-            <motion.div className="bg-white border border-gray-200 rounded-lg shadow p-4 hover:bg-black hover:text-white duration-300 transition-all ease-out" whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-              <div className="flex flex-col items-center mb-4 text-3xl gap-4">
-                <div className='text-center'>
                   <h4 className="text-xl font-bold">Victor Retamal Ferrada</h4>
                   <p className="text-lg text-teal-500">Escrituras Publicas</p>
                 </div>
@@ -158,13 +158,13 @@ const About = () => {
             <motion.div className="bg-white border border-gray-200 rounded-lg shadow p-4 hover:bg-black hover:text-white duration-300 transition-all ease-out" whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
               <div className="flex flex-col items-center mb-4 text-3xl gap-4">
                 <div className='text-center'>
-                  <h4 className="text-xl font-bold">Jimena Ojeda Ampuero</h4>
+                  <h4 className="text-xl font-bold">Jorge Oliver Villegas</h4>
                   <p className="text-lg text-teal-500">Escrituras Publicas</p>
                 </div>
               </div>
               <div className="flex items-center mb-2">
                 <MdMail size={30} className="text-teal-500 mr-2" />
-                <p className="text-lg">jaoa.alfredofonseca@notariointerino.com</p>
+                <p className="text-lg">jaov.alfredofonseca@notariointerino.com</p>
               </div>
             </motion.div>
           </div>
