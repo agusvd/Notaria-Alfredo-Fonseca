@@ -1,11 +1,34 @@
-import React from 'react';
+import React, { useRef, useState } from 'react';
 import { motion } from 'framer-motion';
 import '../../index.css';
 import fondo from '../../assets/fondo1.jpeg';
 import Map from '../Map'
 import { Link } from 'react-router-dom';
+import emailjs from '@emailjs/browser';
+import toast, { Toaster } from 'react-hot-toast';
 
 const Contact = () => {
+    const form = useRef();
+    const [isSubmitting, setIsSubmitting] = useState(false);
+
+    const sendEmail = async (e) => {
+        e.preventDefault();
+        setIsSubmitting(true);
+
+        try {
+            const result = await emailjs.sendForm('service_cl2umrl', 'template_jp3qv7l', form.current, 'aNJBfEH2ziRMCyAYF');
+            console.log(result.text);
+            toast.success('Correo enviado exitosamente');
+            setTimeout(() => {
+                window.location.reload();
+            }, 3000);
+        } catch (error) {
+            console.error(error.text);
+            toast.error('Hubo un error al enviar el correo');
+            setIsSubmitting(false);
+        }
+    };
+
     const container = {
         hidden: {
             opacity: 0,
@@ -49,7 +72,7 @@ const Contact = () => {
                             <li>9:00 - 13:00</li>
                             <li>15:30 - 18:00</li>
                         </ul>
-                        <p>Mas informacion en <Link to='/Nosotros' className='text-red-500'>aqui</Link></p>
+                        <p className='text-lg'>Mas informacion <Link to='/Nosotros' className='text-red-500 hover:text-teal-500 text-lg duration-200 transition-all ease-in-out'>aqui</Link></p>
                     </motion.div>
                 </div>
                 {/* Form */}
@@ -57,13 +80,13 @@ const Contact = () => {
                     variants={item}
                 >
                     <h3 className='text-xl mb-4'>Envíanos un mensaje</h3>
-                    <form className='space-y-4'>
+                    <form className='space-y-4' ref={form} onSubmit={sendEmail}>
                         <div className='mb-4'>
                             <input
                                 type='text'
                                 className='py-2.5 px-4 rounded-lg bg-white focus:shadow focus:outline-none w-full'
                                 id='nombre'
-                                name='nombre'
+                                name="user_name"
                                 placeholder='Nombre Completo'
                                 required
                             />
@@ -73,7 +96,7 @@ const Contact = () => {
                                 type='email'
                                 className='py-2.5 px-4 rounded-lg bg-white focus:shadow focus:outline-none w-full'
                                 id='email'
-                                name='email'
+                                name="user_email"
                                 placeholder='Correo'
                                 required
                             />
@@ -82,21 +105,23 @@ const Contact = () => {
                             <textarea
                                 className='py-2.5 px-4 rounded-lg bg-white focus:shadow focus:outline-none w-full'
                                 id='mensaje'
-                                name='mensaje'
+                                name="message"
                                 placeholder='Mensaje'
                                 rows='4'
                                 required
                             />
                         </div>
-                        <motion.button type='submit' className='bg-teal-500 text-white py-2 px-4 rounded-md hover:bg-green-500 duration-300 transition-all ease-out w-full'
+                        <motion.button type="submit" value="Send" className='bg-teal-500 text-white py-2 px-4 rounded-md hover:bg-green-500 duration-300 transition-all ease-out w-full'
                             whileHover={{ scale: 1.05 }}
                             whileTap={{ scale: 0.95 }}
+                            disabled={isSubmitting}
                         >
-                            Enviar
+                            {isSubmitting ? 'Enviando...' : 'Enviar'}
                         </motion.button>
                     </form>
                 </motion.div>
                 <Map />
+                <Toaster position="top-center" />
             </motion.div>
         </motion.div>
     );

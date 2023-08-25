@@ -1,11 +1,11 @@
 import React from 'react'
-import '../index.css'
-import fojas from '../assets/fojas.png'
-import tgr from '../assets/tgr.png'
-import sii from '../assets/sii.png'
-import registrocivil from '../assets/registrocivil.png'
-import pdj from '../assets/pdj.png'
-import diariooficial from '../assets/diariooficial.png'
+import '../../index.css'
+import fojas from '../../assets/fojas.png'
+import tgr from '../../assets/tgr.png'
+import sii from '../../assets/sii.png'
+import registrocivil from '../../assets/registrocivil.png'
+import pdj from '../../assets/pdj.png'
+import diariooficial from '../../assets/diariooficial.png'
 import { motion } from 'framer-motion'
 
 const Links = () => {

@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { BiEditAlt, BiCheckShield, BiPen } from 'react-icons/bi'
 import { FaChessKing } from 'react-icons/fa'
 import { motion } from 'framer-motion'
-import Modal from './Modal'
+import Modal from '../Modal'
 import { Link } from 'react-router-dom'
 
 const Card = () => {

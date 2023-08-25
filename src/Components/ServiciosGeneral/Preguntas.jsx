@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import React, { useState } from 'react';
 import { FaChevronLeft, FaChevronDown } from 'react-icons/fa';
-import '../index.css';
+import '../../index.css';
 
 const Preguntas = () => {
     const [respuestasVisibles, setRespuestasVisibles] = useState([]);
