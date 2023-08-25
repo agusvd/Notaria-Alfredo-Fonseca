@@ -75,15 +75,11 @@ const About = () => {
           </p>
           <div className="flex items-center">
             <FaPhoneAlt className="text-teal-500 mr-2" />
-            <span className="text-lg">+56 9 9649 0830</span>
-          </div>
-          <div className="flex items-center">
-            <FaPhoneAlt className="text-teal-500 mr-2" />
-            <span className="text-lg">+61 2 223230</span>
+            <span className="text-lg">2223101</span>
           </div>
           <div className="flex items-center">
             <IoLocationSharp className="text-teal-500 mr-2" />
-            <p className="text-lg">21 de Mayo 1123, 6201066 Punta Arenas</p>
+            <p className="text-lg">21 de Mayo 1123, 6201066 Punta Arenas, Region de Magallanes y Antartica Chilena</p>
           </div>
         </motion.div>
 
