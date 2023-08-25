@@ -42,7 +42,7 @@ const Main = () => {
                         Alfredo Fonseca Mihovilovic
                     </motion.h2>
                     <motion.p className="mb-8 leading-relaxed text-xl" variants={item}>
-                        Donde la excelencia y el compromiso se unen para brindarte tranquilidad y confianza en cada trámite legal. Tu notaría de confianza en la región.
+                        Donde la excelencia y el compromiso se unen para brindarte tranquilidad y confianza en cada trámite legal. Tu notaría de confianza en la ciduad de Punta Arenas, Region de Magallanes y Antartica Chilena.
                     </motion.p>
                     <motion.div className="flex justify-center" variants={item}>
                         <a href="#servicios" className="inline-flex text-white bg-gray-900 border-0 py-2 px-6 focus:outline-none hover:bg-teal-600 rounded text-lg">Servicios</a>

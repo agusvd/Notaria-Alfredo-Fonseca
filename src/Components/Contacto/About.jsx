@@ -39,7 +39,7 @@ const About = () => {
         <motion.div className="mb-8 lg:pl-24 lg:pr-24" initial="hidden" animate="visible" variants={containerVariants}>
           <div className='text-justify'>
             <p className="text-lg">
-              La Notaría Alfredo Fonseca ha sido parte de la comunidad desde hace más de 3 años.
+              La Notaría Alfredo Fonseca Mihovilovic ha sido parte de la comunidad desde hace más de 2 años.
             </p>
             <p className="text-lg mt-4">
               Durante todos estos años, hemos sido testigos de numerosos momentos importantes en la vida de las personas. Desde la firma de contratos de compraventa de propiedades hasta la redacción de testamentos, nuestra notaría ha estado presente en cada paso del camino.
