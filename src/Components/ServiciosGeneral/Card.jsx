@@ -105,8 +105,8 @@ const Card = () => {
                             <BiCheckShield size={30} className='text-teal-500' />
                         </div>
                         <div className='flex items-center justify-around text-center py-3 px-1'>
-                            <button onClick={() => setShowModal2(true)} className='text-xl font-semibold bg-teal-500 text-white p-2 rounded-full hover:bg-black duration-150 transition ease-in'>Informacion</button>
-                            <a target='_blank' href='http://fojas.cl/ws_cp/frame_ws_rg.php' className='text-xl font-semibold bg-teal-500 text-white p-2 rounded-full cursor-pointer hover:bg-black duration-150 transition ease-in'>Ingresar</a>
+                            <button onClick={() => setShowModal2(true)} className='text-xl font-semibold bg-teal-500 text-white p-2 rounded-xl hover:bg-black duration-150 transition ease-in'>Informacion</button>
+                            <a target='_blank' href='http://fojas.cl/ws_cp/frame_ws_rg.php' className='text-xl font-semibold bg-teal-500 text-white p-2 rounded-xl cursor-pointer hover:bg-black duration-150 transition ease-in'>Ingresar</a>
                         </div>
                         <div className='p-2 mt-4 flex flex-row items-center text-xl text-teal-500'>
                             <FaChessKing />
@@ -126,8 +126,8 @@ const Card = () => {
                             <BiPen size={30} className='text-teal-500' />
                         </div>
                         <div className='flex items-center justify-around text-center py-3 px-1'>
-                            <button onClick={() => setShowModal3(true)} className='text-xl font-semibold bg-teal-500 text-white p-2 rounded-full hover:bg-black duration-150 transition ease-in'>Informacion</button>
-                            <Link to='/Notaria-Express' className='text-xl font-semibold bg-teal-500 text-white p-2 rounded-full cursor-pointer hover:bg-black duration-150 transition ease-in'>Ingresar</Link>
+                            <button onClick={() => setShowModal3(true)} className='text-xl font-semibold bg-teal-500 text-white p-2 rounded-xl hover:bg-black duration-150 transition ease-in'>Informacion</button>
+                            <Link to='/Notaria-Express' className='text-xl font-semibold bg-teal-500 text-white p-2 rounded-xl cursor-pointer hover:bg-black duration-150 transition ease-in'>Ingresar</Link>
                         </div>
                         <div className='p-2 text-teal-500 mt-4 flex flex-row items-center text-xl'>
                             <FaChessKing />
