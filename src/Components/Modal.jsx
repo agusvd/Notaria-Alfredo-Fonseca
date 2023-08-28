@@ -10,7 +10,7 @@ const Modal = ({ isVisible, onClose, children }) => {
     return (
         <div className='fixed inset-0 bg-black bg-opacity-25 backdrop-blur-sm flex justify-center items-center font-primary' id='closeOut' onClick={handleClose}>
             <div className='w-[600px] flex flex-col'>
-                <button className='text-teal-500 text-3xl hover:text-black cursor-pointer transition duration-150 place-self-end mb-2' 
+                <button className='text-red-500 text-4xl hover:text-teal-500 cursor-pointer transition duration-300 place-self-end mb-2' 
                 onClick={() => onClose()}><CgCloseR/></button>
                 <div className='bg-white p-2 rounded'>
                     {children}

@@ -6,12 +6,7 @@ import { Link, useLocation } from 'react-router-dom';
 import NavbarMobile from './NavbarMobile';
 
 const Navbar = () => {
-    const [menuOpen, setMenuOpen] = useState(false);
     const location = useLocation();
-
-    const toggleMenu = () => {
-        setMenuOpen(!menuOpen);
-    };
 
     return (
         <div className="bg-black text-white sm:flex sm:justify-around p-5 font-primary">
