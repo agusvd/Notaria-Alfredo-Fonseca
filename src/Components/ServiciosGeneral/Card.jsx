@@ -92,7 +92,7 @@ const Card = () => {
                 </h2>
             </motion.div>
             {/* Contenedor de las cartas de servicios */}
-            <motion.div variants={container} initial="hidden" whileInView="visible" className='mt-10 grid grid-cols-1 md:grid-cols-2 justify-center items-center md:gap-y-20 md:gap-x-8 gap-y-20 p-10'>
+            <motion.div variants={container} initial="hidden" whileInView="visible" className='mt-10 sm:grid grid-cols-1 md:grid-cols-2 justify-center items-center flex flex-col md:gap-y-20 md:gap-x-8 gap-y-20'>
                 {/* Carta 1 */}
                 <div className='overflow-hidden rounded-xl bg-white hover:shadow-lg hover:shadow-teal-500 hover:sm:scale-105 w-96 duration-300 transition-all ease-in-out'>
                     <div className='flex items-center justify-center h-[240px] w-full overflow-hidden'>

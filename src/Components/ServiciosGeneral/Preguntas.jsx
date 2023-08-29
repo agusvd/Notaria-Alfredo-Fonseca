@@ -111,9 +111,9 @@ const Preguntas = () => {
                         <span className="relative inline-block"></span>GUIA DE TRAMITES
                     </h2>
                 </div>
-                <p className="text-xl text-center bg-black text-white p-10 mb-5">
-                    Aquí encontrarás respuestas a algunas preguntas frecuentes sobre diversos trámites de notarías y asesoría legal.
-                </p>
+                <div className="text-xl justify-center text-center bg-black text-white p-10 mb-5">
+                    <p className='text-center flex items-center justify-center'>Aquí encontrarás respuestas a algunas preguntas frecuentes sobre diversos trámites de notarías y asesoría legal.</p>
+                </div>
                 <div id='preguntas' className="max-w-screen-lg sm:mx-auto">
                     <ul className="space-y-8">
                         <motion.div variants={container} initial="hidden" whileInView="visible">
@@ -121,7 +121,7 @@ const Preguntas = () => {
                                 <motion.li key={preguntaRespuesta.id} variants={item}>
                                     <div className="space-y-3 pb-3">
                                         <div className="flex items-center justify-between rounded-xl p-2">
-                                            <h3 className="text-xl bg-teal-600 transition-colors duration-200 text-white p-2 rounded-xl">{preguntaRespuesta.pregunta}</h3>
+                                            <h3 className="w-full sm:w-2/3 text-xl bg-teal-600 transition-colors duration-200 text-white p-2 rounded-xl">{preguntaRespuesta.pregunta}</h3>
                                             <button onClick={() => handleMostrarRespuesta(preguntaRespuesta.id)} className="p-1 transition duration-300 transform rounded-full bg-teal-400 hover:scale-125">
                                                 {respuestasVisibles[preguntaRespuesta.id] ? (<FaChevronDown className="w-6 h-6" />) : (<FaChevronLeft className="w-6 h-6" />)}
                                             </button>
