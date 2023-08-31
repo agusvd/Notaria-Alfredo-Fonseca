@@ -8,7 +8,6 @@ const sitemapStream = new SitemapStream({
 
 
 sitemapStream.write({ url: '/', changefreq: 'weekly', priority: 0.8 });
-sitemapStream.write({ url: '/pagina1', changefreq: 'weekly', priority: 0.7 });
 sitemapStream.write({ url: '/Notaria-express', changefreq: 'weekly', priority: 0.6 });
 sitemapStream.write({ url: '/Contacto', changefreq: 'weekly', priority: 0.5 });
 sitemapStream.write({ url: '/Nosotros', changefreq: 'weekly', priority: 0.4 });
