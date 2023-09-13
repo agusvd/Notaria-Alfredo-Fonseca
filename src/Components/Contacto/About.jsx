@@ -4,6 +4,7 @@ import { BsStarFill } from 'react-icons/bs';
 import { MdMail } from 'react-icons/md'
 import { IoLocationSharp } from 'react-icons/io5';
 import { motion } from 'framer-motion';
+import { Helmet } from "react-helmet";
 
 const About = () => {
   const containerVariants = {
@@ -34,6 +35,12 @@ const About = () => {
 
   return (
     <div className="bg-white text-black">
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Nosotros</title>
+        <meta name="description" content="Nosotros Notaria Alfredo Fonseca" />
+        <link rel="canonical" href="http://notariafonseca.cl/Nosotros" />
+      </Helmet>
       <div className="mx-auto px-4 py-8">
         <motion.h2 className="text-3xl font-bold text-teal-500 mb-4 lg:pl-24 lg:pr-24" initial="hidden" animate="visible" variants={containerVariants}>Nosotros</motion.h2>
         <motion.div className="mb-8 lg:pl-24 lg:pr-24" initial="hidden" animate="visible" variants={containerVariants}>
@@ -98,7 +105,7 @@ const About = () => {
                 <p className="text-lg">docprivados.alfredofonseca@notariointerino.com</p>
               </div>
             </motion.div>
-            
+
           </div>
         </motion.div>
 

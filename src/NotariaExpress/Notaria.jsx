@@ -4,6 +4,7 @@ import Modal from './Modal';
 import ModalCategoria from './ModalCategoria';
 import ModalBuscar from './ModalBuscar';
 import { BiSearchAlt } from 'react-icons/bi'
+import { Helmet } from "react-helmet";
 import './Notaria.css';
 
 const Notaria = () => {
@@ -65,6 +66,12 @@ const Notaria = () => {
     return (
         <div className='pt-10 pb-20 h-full w-full font-primary animated-background font-bold items-center justify-center'>
             {/* Header */}
+            <Helmet>
+                <meta charSet="utf-8" />
+                <title>Notaria Express</title>
+                <meta name="description" content="Notaria Alfredo Fonseca" />
+                <link rel="canonical" href="http://notariafonseca.cl/Notaria-express" />
+            </Helmet>
             <div className='flex flex-col items-center justify-center text-center'>
                 <img src="https://www.notarioexpress.cl/images/finiquitos-page/logo/logo-icon.png"
                     alt="logo notarioexpress" width="50px" height="auto" />

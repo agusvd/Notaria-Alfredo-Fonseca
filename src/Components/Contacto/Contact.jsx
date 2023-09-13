@@ -6,6 +6,7 @@ import Map from '../Map'
 import { Link } from 'react-router-dom';
 import emailjs from '@emailjs/browser';
 import toast, { Toaster } from 'react-hot-toast';
+import { Helmet } from "react-helmet";
 
 const Contact = () => {
     const form = useRef();
@@ -50,6 +51,12 @@ const Contact = () => {
     };
     return (
         <motion.div className='bg-cover bg-center min-h-screen flex items-center justify-center font-primary' style={{ backgroundImage: `url(${fondo})` }}>
+            <Helmet>
+                <meta charSet="utf-8" />
+                <title>Contacto</title>
+                <meta name="description" content="Contacto Notaria Alfredo Fonseca" />
+                <link rel="canonical" href="http://notariafonseca.cl/Contacto" />
+            </Helmet>
             <motion.div className='bg-white bg-opacity-90 sm:rounded-xl p-2 sm:p-6 w-full md:w-3/4 lg:w-2/3 xl:w-1/2 sm:m-10'
                 initial="hidden"
                 animate="visible"
